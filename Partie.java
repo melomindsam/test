@@ -3,7 +3,7 @@ public class Partie {
 	private Joueur j1;
 	private Joueur j2;
 	private int tourEncours;
-	private Joueur joueurActif;
+	Joueur joueurActif;
 
 	public static final int SCORE_A_ATTEINDRE = 7;
 
@@ -23,6 +23,7 @@ public class Partie {
 	// -----------------------
 
 	public void changerJoueurActif() {
+
 		if (joueurActif == j1) {
 			joueurActif = j2;
 		} else if (joueurActif == j2) {

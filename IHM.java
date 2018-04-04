@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 public class IHM {
-	private Partie partie;
+
 	private JFrame frame;
 	private JTextField textFieldScoreJ1;
 	private JTextField textFieldScoreJ2;
@@ -24,6 +24,7 @@ public class IHM {
 	private JButton btnRestart;
 	private JCheckBox chckbxCheat1;
 	private JCheckBox chckbxCheat2;
+	private Partie partie;
 
 	/**
 	 * Launch the application.
@@ -48,7 +49,6 @@ public class IHM {
 	public IHM() {
 		partie = new Partie("Nono", "Camille");
 		initialize();
-		refreshScreen();
 
 	}
 
@@ -232,4 +232,5 @@ public class IHM {
 		chckbxCheat2.setBounds(316, 216, 97, 23);
 		frame.getContentPane().add(chckbxCheat2);
 	}
+
 }
